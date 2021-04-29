@@ -1,0 +1,57 @@
+/* fir-route 样式 */
+
+.fir-route-c {
+    margin-top: 20px;
+}
+
+.fir-route-c .fir-route-ul .list {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right: 17px;
+}
+
+.fir-route-c .fir-route-ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.fir-route-c .fir-route-ul .list .list-font {
+    position: absolute;
+    top: 124px;
+    left: 36px;
+}
+
+.fir-route-c .fir-route-ul .list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #626262;
+    margin-bottom: 44px;
+}
+
+.fir-route-c .fir-route-ul .list h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4C4C;
+    line-height: 24px;
+}
+
+
+/* 响应式布局样式 */
+
+@media screen and (max-width:768px) {
+    .fir-route-c {
+        width: 100%;
+    }
+    .fir-route-c .fir-route-ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .fir-route-c .fir-route-ul .list {
+        position: relative;
+        float: none;
+        overflow: hidden;
+        margin-right: 17px;
+    }
+}

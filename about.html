@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动端禁止页面缩放的meta标签 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/aboout.css">
+</head>
+
+<body>
+    <!-- 头部导航样式 -->
+    <div class="header">
+        <!-- 版心 -->
+        <div class="header-c center">
+            <a href="" class="logo"></a>
+            <ul class="nav">
+                <li class="nav-list">
+                    <a class="fir" href="index.html">首页</a>
+                    <span class="line"></span>
+                </li>
+                <li class="nav-list">
+                    <a class="fir" href="plan.html">特别策划</a>
+                    <span class="line"></span>
+                </li>
+                <li class="nav-list">
+                    <div class="top-bar">
+                        <span>精品路线</span>
+                        <div>
+                            <a class="sec-t" href="fir-route.html">定制团体游</a>
+                            <a class="active sec-b" href="sec-route.html">领队自由行</a>
+                        </div>
+                    </div>
+                    <span class="line"></span>
+                </li>
+                <li class="active nav-list">
+                    <a class="fir" href="about.html">关于我们</a>
+                    <span class="line"></span>
+                </li>
+                <li class="nav-list">
+                    <a class="fir" href="contact.html">联系我们</a>
+                    <span class="line"></span>
+                </li>
+            </ul>
+            <button class="fa fa-list-ul"></button>
+            <button class="fa fa-sort-amount-up"></button>
+        </div>
+    </div>
+    <!-- about-us样式 -->
+    <div class="about-us">
+        <!-- 版心 -->
+        <div class="about-c center">
+            <div class="top">
+                <h3><span></span>关于我们</h3>
+                <h4>ABOUT&nbsp;US</h4>
+            </div>
+            <div class="left">
+                <img class="about-logo" src="img/aboutUs.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="dec first-dec">
+                    <div class="left-dec">
+                        <h3>介绍</h3>
+                        <h4>Introduce</h4>
+                    </div>
+                    <div class="right-content">
+                        <p>新旅行概念社区，在这里，你可以收货来自世界各地的友谊，为您 提供省心、省钱、纯玩、有趣的路线随时带您出发看世界。</p>
+                    </div>
+                </div>
+                <div class="dec second-dec">
+                    <div class="left-dec">
+                        <h3>理念</h3>
+                        <h4>Concept</h4>
+                    </div>
+                    <div class="right-content">
+                        <p>每一寸土地都承载着一个城市厚重而亲切的灵魂。About travel,about life,That's all.</p>
+                    </div>
+                </div>
+                <div class="dec third-dec">
+                    <div class="left-dec">
+                        <h3>慢旅</h3>
+                        <h4>SL&nbsp;TRAVLE</h4>
+                    </div>
+                    <div class="right-content">
+                        <p>不关是你少年时代阅读格瓦拉的激情，还是垂暮之年海峡那边重温青春的民谣； 我们于历史，与人文，与自然中发掘最新的旅行主题，与你一起诠释生活中各个 阶段的各种爱。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部样式 -->
+    <div class="footer">
+        <!-- 版心 -->
+        <div class="footer-c center">
+            <div class="left">
+                <h3><span></span> 联系我们</h3>
+                <h4>CONTACT</h4>
+                <dl>
+                    <dt>慢旅Slow Travle工作室</dt>
+                    <dd>地点：中国河南省郑州市绿地新都汇</dd>
+                    <dd>邮编：1000000 </dd>
+                    <dd>电话：0392-23656504</dd>
+                    <dd>邮箱：manlv@qq.com</dd>
+                    <dd>
+                        <img src="img/QQ.png" alt="">
+                        <img src="img/微信.png" alt="">
+                        <img src="img/微博 .png" alt="">
+                    </dd>
+                    <dd>COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</dd>
+                </dl>
+            </div>
+            <div class="right">
+                <form action="#">
+                    <div class="bigbox">
+                        <div class="box">
+                            <p> 姓名</p><input class="name ipt" type="text">
+                        </div>
+                        <div class="box">
+                            <p> 邮箱</p><input class="email ipt" type="text"></div>
+                        <div class="box">
+                            <p> 电话</p><input class="phone ipt" type="text">
+                        </div>
+                        <div class="box box-text">
+                            <p>内容</p><input class="text ipt" type="text">
+                        </div>
+                        <div class="btu">
+                            <button>提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- 监听鼠标滚动事件 -->
+<script>
+    // 获取header节点
+    var headerEl = document.querySelector(".header");
+    // console.log(headerEl.nextElementSibling.scrollTop);
+    window.onscroll = function() {
+        //为了保证兼容性，这里取两个值，哪个有值取哪一个
+        //scrollTop就是触发滚轮事件时滚轮的高度
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        // console.log("滚动距离" + scrollTop);
+        if (scrollTop >= headerEl.offsetHeight / 2) {
+            headerEl.classList.add("active");
+        } else {
+            headerEl.classList.remove("active");
+        }
+    }
+</script>
+<!-- 响应式导航设置 -->
+<script>
+    // 获取header-c 的导航栏对象
+    var navEl = document.querySelector(".header-c .nav");
+    // 获取button节点对象
+    var buttonDownEl = document.querySelector(".header-c .fa.fa-list-ul");
+    var buttonUpEl = document.querySelector(".header-c .fa.fa-sort-amount-up ");
+    buttonDownEl.onclick = function() {
+        navEl.style.opacity = "1";
+        headerEl.classList.add("active");
+        navEl.style.transform = "translate(-100%, 0)";
+        buttonUpEl.style.display = "block";
+        this.style.display = "none";
+    }
+    buttonUpEl.onclick = function() {
+        navEl.style.opacity = "0";
+        headerEl.classList.add("active");
+        buttonDownEl.style.display = "block";
+        this.style.display = "none";
+        navEl.style.transform = "translate(100%, 0)";
+    }
+</script>
+
+</html>

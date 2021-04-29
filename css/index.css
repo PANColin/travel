@@ -1,0 +1,557 @@
+/* 首页头部公共样式 */
+
+.top {
+    margin-top: 102px;
+    position: relative;
+}
+
+.top h3 {
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(59, 59, 59, 1);
+}
+
+.top h4 {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #6F6F6F;
+    margin-top: 20px;
+    margin-bottom: 76px;
+}
+
+.top h3 span {
+    position: absolute;
+    display: block;
+    left: -26px;
+    top: 0;
+    width: 52px;
+    height: 13px;
+    /* z-index: -1; */
+    background-color: rgba(4, 228, 248, .5);
+}
+
+
+/* banner 样式 */
+
+.banner {
+    width: 100%;
+    height: 624px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner ul {
+    width: 500%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.banner ul .list {
+    float: left;
+}
+
+
+/* 字体图标样式 */
+
+.fa.left,
+.fa.right {
+    font-size: 100px;
+    color: beige;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+/* 左边箭头 */
+
+.fa.left {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    opacity: 0.3;
+    /* transition: all 0.6; */
+}
+
+.fa.left:hover {
+    opacity: 1;
+    color: red;
+}
+
+
+/* 右边箭头 */
+
+.fa.right {
+    top: 50%;
+    right: 0;
+    /* margin-top: -50px; */
+    transform: translate(0, -50%);
+    opacity: 0.3;
+    /* transition: all 0.6; */
+}
+
+.fa.right:hover {
+    opacity: 1;
+    color: red;
+}
+
+
+/* 小圆点的样式 */
+
+.banner .dian-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.banner .dian-box button {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: #fff;
+    /* box-sizing: border-box; */
+    background-clip: content-box;
+    border: 3px solid transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.banner .dian-box button.active {
+    background-color: #bfa;
+    border-color: #fff;
+}
+
+.banner .dian-box button:hover {
+    background-color: #bfa;
+    border-color: #fff;
+}
+
+
+/* banner 的title样式 */
+
+.banner .title {
+    position: absolute;
+    top: 173px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+/* plan 样式 */
+
+.plan-c {
+    position: relative;
+}
+
+
+/* 内容公共的样式 */
+
+.content {
+    position: relative;
+    height: 253px;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.plan-c .content .box-img {
+    /* overflow: hidden; */
+    width: 362px;
+    height: 253px;
+}
+
+.plan-c .content .box-img img {
+    transition: .4s;
+}
+
+.plan-c .content .box-img:hover img {
+    /* transform: scale3d(1.5, 1, 1); */
+    /* transform: scale(1.5); */
+    filter: blur(2px);
+    /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+}
+
+.plan-c .content .box-img .mask {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #E7E7E7;
+    opacity: 0;
+    transition: .4s;
+}
+
+.plan-c .content .box-img:hover .mask {
+    opacity: 1;
+}
+
+.plan-c .content .c {
+    text-align: center;
+    /* line-height: 55px; */
+    width: 818px;
+    height: 167px;
+    background-color: rgba(251, 251, 251, 1);
+}
+
+.plan-c .content .c h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #404040;
+    margin-top: 38px;
+}
+
+.plan-c .content .c h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515254;
+    margin-top: 18px;
+}
+
+.plan-c .content .c p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #626365;
+    margin-top: 18px;
+}
+
+
+/* 内容顶部 的样式 */
+
+.plan-c .content.content-top .box-img {
+    position: absolute;
+    left: 0;
+}
+
+.plan-c .content.content-top .box-img .mask {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
+.plan-c .content.content-top .c {
+    position: absolute;
+    top: 43px;
+    right: 0;
+}
+
+
+/* 内容中部 的样式 */
+
+.plan-c .content.content-center .box-img {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.plan-c .content.content-center .box-img .mask {
+    position: absolute;
+    top: -20px;
+    left: -19px;
+}
+
+.plan-c .content.content-center .c {
+    position: absolute;
+    top: 43px;
+    left: 0;
+}
+
+
+/* 内容底部 的样式 */
+
+.plan-c .content.content-bottom .box-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.plan-c .content.content-bottom .box-img .mask {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
+.plan-c .content.content-bottom .c {
+    position: absolute;
+    top: 43px;
+    right: 0;
+}
+
+
+/*plan和route底部按钮样式 */
+
+.plan-c .but,
+.route-c .but {
+    height: 68px;
+    text-align: center;
+    margin-top: 68px;
+    color: #807E7E;
+}
+
+.plan-c .but button a,
+.route-c .but button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.plan-c .but button,
+.route-c .but button {
+    width: 394px;
+    height: 68px;
+    border: 2px solid #BDBDBF;
+    background-color: #fff;
+    opacity: 0.2;
+    line-height: 68px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* 关于我们 的样式 */
+
+.about-c {
+    position: relative;
+}
+
+.about-c .top {
+    position: absolute;
+    top: 20px;
+}
+
+.about-c .top h3 {
+    color: #fff;
+}
+
+.about::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about .left,
+.about .right {
+    margin-top: 100px;
+    float: left;
+}
+
+
+/* 左边样式 */
+
+.about .left {
+    position: relative;
+    width: 40%;
+    height: 296px;
+    opacity: 0.75;
+    background-image: linear-gradient(rgba(6, 6, 6, 1), rgba(6, 6, 6, .8)), url(../img/about.jpg);
+}
+
+.about .left .about-logo {
+    position: absolute;
+    top: 70px;
+    right: 71px;
+}
+
+
+/* 右边样式 */
+
+.about .right .first-dec,
+.about .right .second-dec {
+    width: 100%;
+    height: 38px;
+    margin-top: 72px;
+}
+
+.about .right {
+    width: 60%;
+    height: 296px;
+}
+
+.about .right .left-dec h3,
+.about .right .left-dec h4 {
+    width: fit-content;
+    height: 24px;
+    margin: 0 auto;
+    margin-right: 10px;
+    /* line-height: 24px; */
+}
+
+.about .right .left-dec h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #373737;
+}
+
+.about .right .left-dec h4 {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.about .right .right-content,
+.about .right .left-dec {
+    padding-left: 19px;
+    width: 406px;
+    float: left;
+}
+
+.about .right .right-content {
+    border-left: 2px solid #A5A5A9;
+    font-size: 14px;
+    font-weight: 400;
+    color: #494949;
+    line-height: 24px;
+}
+
+
+/* route样式 */
+
+
+/* .route-c {
+    overflow: hidden;
+} */
+
+.route-c::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 清除浮动的影响 */
+
+.route-c .route-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.route-c .route-wrapper .route-box {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.route-c .route-wrapper h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5D5D5D;
+    margin-top: 110px;
+}
+
+.route-c .route-wrapper h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #656565;
+    margin-top: 10px;
+}
+
+.route-c .route-box img {
+    transition: all .4s;
+}
+
+.route-c .route-box:hover img {
+    transform: scale(2);
+}
+
+.route-c .route-box .mask-border {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 357px;
+    height: 217px;
+    border: 2px solid #04E4F8;
+    transition: all .4s;
+    opacity: 0;
+}
+
+.route-c .route-box:hover .mask-border {
+    opacity: 1;
+}
+
+
+/* make 样式 */
+
+.make {
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 338px;
+    background: url(../img/make.jpg) no-repeat center;
+    /* filter: grayscale(50%); */
+    /* background-color: rgba(56, 89, 99, 1); */
+}
+
+.make .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 338px;
+    /* filter: grayscale(50%); */
+    background-color: rgba(56, 89, 99, .6);
+}
+
+.make .mask .make-left {
+    position: absolute;
+    left: 25%;
+    top: 102px;
+    transform: translate(-50%, 0);
+    margin-right: 50px;
+}
+
+.make .mask .make-right {
+    position: absolute;
+    right: 25%;
+    top: 102px;
+    transform: translate(-50%, 0);
+}
+
+.make .mask h3 {
+    margin: 0 auto;
+    width: 146px;
+    height: 45px;
+    border: 2px solid #A5A5A9;
+    /* background: #04E4F8; */
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #F1F2F3;
+}
+
+.make .mask h3:hover {
+    background-color: #04E4F8;
+}
+
+.make .mask h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #BDBABA;
+    margin-top: 15px;
+}
+
+.make .mask h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #BDBABA;
+    margin-top: 8px;
+}
+
+.make .mask hr {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 30px;
+}

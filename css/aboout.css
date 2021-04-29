@@ -1,0 +1,173 @@
+/* 关于我们 的样式 */
+
+.about-c {
+    position: relative;
+}
+
+.top {
+    margin-top: 100px;
+    position: relative;
+}
+
+.top h3 {
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(59, 59, 59, 1);
+}
+
+.top h4 {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #6F6F6F;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.top h3 span {
+    position: absolute;
+    display: block;
+    left: -26px;
+    top: 0;
+    width: 52px;
+    height: 13px;
+    /* z-index: -1; */
+    background-color: rgba(4, 228, 248, .5);
+}
+
+.about-c::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-c .left,
+.about-c .right {
+    float: left;
+}
+
+
+/* 左边样式 */
+
+.about-c .left {
+    position: relative;
+    width: 430px;
+    height: 100%;
+    opacity: 0.75;
+}
+
+
+/* 右边样式 */
+
+.about-c .right .first-dec,
+.about-c .right .second-dec,
+.about-c .right .third-dec {
+    width: 100%;
+    height: 38px;
+    margin-top: 72px;
+}
+
+.about-c .right {
+    width: 60%;
+    height: 100%;
+}
+
+.about-c .right .left-dec {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.about-c .right .left-dec h3,
+.about-c .right .left-dec h4 {
+    width: fit-content;
+    height: 24px;
+    margin: 0 auto;
+    /* line-height: 24px; */
+}
+
+.about-c .right .left-dec h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #373737;
+}
+
+.about-c .right .left-dec h4 {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.about-c .right .right-content {
+    padding-left: 19px;
+    width: 406px;
+    float: left;
+    border-left: 2px solid #A5A5A9;
+    font-size: 14px;
+    font-weight: 400;
+    color: #494949;
+    line-height: 24px;
+}
+
+
+/* 响应式布局 样式 */
+
+@media screen and (max-width:768px) {
+    /* about-us样式  */
+    .about-c {
+        width: 100%;
+        height: 100%;
+        /* height: 1000px; */
+    }
+    .about-c::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .about-c .left::after,
+    .about-c .right::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .about-c .left,
+    .about-c .right {
+        width: fit-content;
+        float: none;
+        /* position: absolute; */
+        margin: 0 auto;
+    }
+    .about-c .right {
+        background: url(../img/aboutUs.jpg);
+        background-size: cover;
+        opacity: 1;
+        filter: blur(1px);
+        width: fit-content;
+        height: 100%;
+        transition: all 0.4s;
+    }
+    .about-c .right:hover {
+        filter: blur(0);
+    }
+    .about-c .right div.dec .left-dec h3,
+    .about-c .right div.dec .left-dec h4 {
+        color: aliceblue;
+        transition: all 0.4s;
+    }
+    .about-c .right div.dec .left-dec h3 {
+        margin-top: 50px;
+    }
+    .about-c .right div.dec .right-content {
+        text-decoration: underline;
+        color: aliceblue;
+        width: 100%;
+        height: fit-content;
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    .about-c .right div.dec .right-content:hover {
+        opacity: 1;
+    }
+}

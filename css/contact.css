@@ -1,0 +1,30 @@
+/* contact 样式 */
+
+.map-c {
+    position: relative;
+    height: 500px;
+}
+
+.map-c iframe {
+    position: absolute;
+    width: 800px;
+    height: 346px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 响应式布局样式 */
+
+@media screen and (max-width:768px) {
+    .map-c {
+        width: 100%;
+    }
+    .map-c iframe {
+        position: absolute;
+        width: fit-content;
+        height: 100%;
+        margin-top: 150px;
+    }
+}

@@ -1,0 +1,187 @@
+/* scheme 样式 */
+
+
+/* .scheme-c::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.scheme-c {
+    height: 100%;
+    /* background-color: orange; */
+    margin-top: 20px;
+    /* border: 1px solid transparent; */
+}
+
+.scheme-c .scheme-wrapper .scheme-list {
+    width: fit-content;
+    height: 250px;
+    float: left;
+    margin-top: 80px;
+    /* background-color: red; */
+}
+
+
+/* 清除浮动的影响 */
+
+
+/* li内部左边的样式 */
+
+.scheme-c .scheme-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.scheme-c .scheme-wrapper .scheme-list div {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.scheme-c .scheme-wrapper .scheme-list .list-left {
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.scheme-c .scheme-list .list-left .scheme-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(114, 113, 113, .5);
+    opacity: 0;
+}
+
+.scheme-c .scheme-list .list-left:hover .scheme-mask {
+    opacity: 1;
+}
+
+.scheme-c .scheme-list .list-left img {
+    width: 350px;
+    transition: all .4s;
+}
+
+.scheme-c .scheme-list .list-left:hover img {
+    transform: scale(1.5);
+}
+
+.scheme-c .list-left .scheme-mask .border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #04E4F8;
+    opacity: 1;
+    transition: .4s;
+}
+
+.scheme-c .list-left:hover .border {
+    width: 309px;
+    height: 190px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+
+/* li内部右边的样式 */
+
+.scheme-c .scheme-wrapper .scheme-list .list-right {
+    width: 165px;
+    height: 250px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.scheme-c .scheme-wrapper .list-right h2 .dec {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3A3A3A;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.scheme-c .scheme-wrapper .list-right h2 .price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #474646;
+    margin-top: 12px;
+}
+
+.scheme-c .scheme-wrapper .list-right h3 button {
+    width: 42px;
+    height: 20px;
+    border: 1px solid #B5B5B5;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #474646;
+    margin-right: 5px;
+    background-color: #fff;
+    margin-top: 14px;
+}
+
+.scheme-c .scheme-wrapper .list-right h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727171;
+    margin-top: 37px;
+}
+
+.scheme-c .scheme-wrapper .list-right h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727171;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+
+/* 响应式页面样式 */
+
+@media screen and (max-width:768px) {
+    /* 不起作用，除非直接设置高度？ 因为底下ul设置的绝对定位，完全脱离文档流了*/
+    .scheme-c::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .scheme-c {
+        width: 100%;
+        /* height: 2900px; */
+        height: 100%;
+        /* overflow: hidden; */
+    }
+    .scheme-c .scheme-wrapper {
+        width: 350px;
+        height: fit-content;
+        margin: 0 auto;
+        /* position: absolute; */
+        /* top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0); */
+    }
+    .scheme-c .scheme-wrapper::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .scheme-c .scheme-wrapper .scheme-list {
+        width: fit-content;
+        height: 100%;
+        float: none;
+        margin-top: 30px;
+    }
+    /* li内部右边的样式 */
+    .scheme-c .scheme-wrapper .scheme-list .list-right {
+        width: fit-content;
+        height: 100%;
+        margin-left: 25px;
+    }
+}

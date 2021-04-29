@@ -1,0 +1,154 @@
+/* sec-route 样式 */
+
+.sec-route-c {
+    margin-top: 20px;
+}
+
+.sec-route-c .nav {
+    position: relative;
+    margin-top: 100px;
+}
+
+.sec-route-c .nav .dec {
+    width: 90px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    float: left;
+    margin-top: 83px;
+    margin-right: 28px;
+    border: 1px solid rgba(46, 59, 76, 0.28);
+}
+
+.sec-route-c .nav .dec:hover {
+    background-color: rgba(90, 208, 220, .6);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* 公共样式 */
+
+
+/*  nav下的图片样式 */
+
+.sec-route-c .nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sec-route-c .nav .nav-list {
+    float: left;
+    margin-right: 70px;
+}
+
+.sec-route-c .nav .nav-list .list-img {
+    position: relative;
+    width: 310px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.sec-route-c .nav .nav-list .list-img .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s;
+    background-color: rgba(101, 115, 120, .3);
+}
+
+.sec-route-c .nav .nav-list .list-img .mask .mask-border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #04E4F8;
+    transition: all .4s;
+    opacity: 0;
+}
+
+.sec-route-c .nav .nav-list .list-img:hover .mask-border {
+    width: 80%;
+    height: 80%;
+    opacity: 1;
+}
+
+.sec-route-c .nav .nav-list .list-img:hover .mask {
+    opacity: 1;
+}
+
+
+/* nav 下的文字样式 */
+
+.sec-route-c .nav .nav-list .font h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #434545;
+    margin-top: 18px;
+    margin-bottom: 2px;
+}
+
+.sec-route-c .nav .nav-list .font h4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #434545;
+    margin-bottom: 23px;
+}
+
+.sec-route-c .nav .nav-list .font hr {
+    width: 310px;
+    opacity: 0.8;
+    height: 1px;
+}
+
+
+/* 底部more样式 */
+
+.sec-route-c .but {
+    height: 68px;
+    text-align: center;
+    margin-top: 68px;
+    color: #807E7E;
+}
+
+.sec-route-c .but button {
+    width: 100px;
+    height: 68px;
+    border: 2px solid #BDBDBF;
+    background-color: #fff;
+    opacity: 0.2;
+    line-height: 68px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+sec-route-c .but button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 响应式布局样式 */
+
+@media screen and (max-width:768px) {
+    .sec-route-c {
+        width: 100%;
+    }
+    .sec-route-c .nav {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .sec-route-c .nav .dec {
+        float: none;
+    }
+    .sec-route-c .nav .nav-list {
+        float: none;
+        margin-right: 0;
+    }
+}
