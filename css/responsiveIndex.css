@@ -51,8 +51,11 @@
     }
     .plan-c .content.content-top .box-img .mask {
         position: absolute;
-        top: -20px;
-        left: 15px;
+        width: 120%;
+        height: 120%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .plan-c .content.content-top .c {
         position: absolute;
@@ -74,8 +77,11 @@
     }
     .plan-c .content.content-center .box-img .mask {
         position: absolute;
-        top: -20px;
-        left: -19px;
+        width: 120%;
+        height: 120%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .plan-c .content.content-center .c {
         position: absolute;
@@ -99,8 +105,11 @@
     }
     .plan-c .content.content-bottom .box-img .mask {
         position: absolute;
-        top: -20px;
-        left: 15px;
+        width: 120%;
+        height: 120%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .plan-c .content.content-bottom .c {
         position: absolute;
