@@ -184,4 +184,8 @@
         height: 100%;
         margin-left: 25px;
     }
+    .scheme-c .scheme-wrapper .scheme-list .list-right {
+        width: 100%;
+        height: fit-content;
+    }
 }
