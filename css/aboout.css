@@ -155,15 +155,18 @@
     .about-c .right div.dec .left-dec h4 {
         color: aliceblue;
         transition: all 0.4s;
+        width: fit-content;
     }
     .about-c .right div.dec .left-dec h3 {
         margin-top: 50px;
     }
     .about-c .right div.dec .right-content {
         text-decoration: underline;
+        margin-top: 10px;
         color: aliceblue;
-        width: 100%;
+        width: fit-content;
         height: fit-content;
+        padding-left: 0;
         opacity: 0;
         transition: all 0.4s;
     }
