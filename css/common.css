@@ -1,3 +1,19 @@
+/* 回到顶部的样式 */
+
+.return-top {
+    /* 改变文字的排列方向,改为垂直方向后,text-align/line-height 控制方向也跟着改变 */
+    /* writing-mode: vertical-lr; */
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    /* transform: rotate(-90deg); */
+    font-size: 55px;
+    cursor: pointer;
+    display: none;
+    transition: all .5s;
+}
+
+
 /* 清除右边多余样式 */
 
 .mr0 {

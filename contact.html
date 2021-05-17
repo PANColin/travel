@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./animate/animatenew.min.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
 </head>
 
 <body>
     <!-- 头部导航样式 -->
     <div class="header">
         <!-- 版心 -->
-        <div class="header-c center">
+        <div class="header-c center wow animate__fadeInDown">
             <a href="" class="logo"></a>
             <ul class="nav">
                 <li class="nav-list">
@@ -63,9 +65,9 @@
         <!-- 版心 -->
         <div class="footer-c center">
             <div class="left">
-                <h3><span></span> 联系我们</h3>
-                <h4>CONTACT</h4>
-                <dl>
+                <h3 class="wow wow animate__fadeInDown"><span></span> 联系我们</h3>
+                <h4 class="wow wow animate__fadeInDown">CONTACT</h4>
+                <dl class="wow wow animate__fadeInDown">
                     <dt>慢旅Slow Travle工作室</dt>
                     <dd>地点：中国河南省郑州市绿地新都汇</dd>
                     <dd>邮编：1000000 </dd>
@@ -79,7 +81,7 @@
                     <dd>COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</dd>
                 </dl>
             </div>
-            <div class="right">
+            <div class="right wow animate__flipInY">
                 <form action="#">
                     <div class="bigbox">
                         <div class="box">
@@ -101,6 +103,50 @@
             </div>
         </div>
     </div>
+    <!-- 回到顶部 -->
+    <div class="return-top wow animate__backInUp">
+        <span class="fa fa-dove"></span>
+    </div>
+    <script src="./jquery/jquery.js"></script>
+    <script src="./swiper/swiper.min.js"></script>
+    <script src="./animate/wow.min.js"></script>
+    <!-- 回到顶部 -->
+    <script type="text/javascript">
+        // 页面顺滑滚动的方式:
+        //     1. html { scroll-behavior: smooth; }
+        //     2. window.scroll/By({ top: xx, left: xx, behavior: "smooth" })
+
+        console.log(window.pageYOffset);
+        // 监听滚动事件
+        $(function() {
+            window.onscroll = function() {
+                var sct = window.pageYOffset;
+                // console.log(sct);
+                $(".return-top").css({
+                    display: sct >= 800 ? "block" : "none"
+                });
+            }
+        });
+
+        $(".return-top").on("click", function() {
+            // window.scroll(0,0);
+            // window.scroll({ top: 0 });
+            window.scroll({
+                top: 0,
+                behavior: "smooth"
+            });
+        })
+    </script>
+    <!-- wow动画 -->
+    <script>
+        new WOW({
+            boxClass: 'wow',
+            animateClass: 'animate__animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        }).init();
+    </script>
     <!-- 监听鼠标滚动事件 -->
     <script>
         // 获取header节点

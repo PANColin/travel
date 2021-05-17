@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsiveIndex.css">
+    <link rel="stylesheet" href="./animate/animatenew.min.css">
+    <link rel="stylesheet" href="./swiper/swiper.min.css">
 </head>
 
 <body>
     <!-- 头部导航样式 -->
     <div class="header">
         <!-- 版心 -->
-        <div class="header-c center">
+        <div class="header-c center wow animate__fadeInDown">
             <a href="" class="logo"></a>
             <ul class="nav">
                 <li class="active nav-list">
@@ -53,37 +55,35 @@
         </div>
     </div>
     <!-- banner样式 -->
-    <div class="banner">
-        <ul>
-            <li class="list"><img src="img/banner.jpg" alt=""></li>
-            <li class="list"><img src="img/banner-2.jpg" alt=""></li>
-            <li class="list"><img src="img/banner-3.jpg" alt=""></li>
-            <li class="list"><img src="img/banner.jpg" alt=""></li>
-        </ul>
-        <p class="title">——让美好触手可及——</p>
-        <!-- 箭头 -->
-        <p class="left fa fa-chevron-left" onclick="goNext()"></p>
-        <p class="right fa fa-chevron-right" onclick="goNext(true)"></p>
-        <!-- 小圆点 -->
-        <div class="dian-box">
-            <button class="active"></button>
-            <button></button>
-            <button></button>
-        </div>
-        <!-- 版心 -->
-        <div class="banner-c center">
+    <div class="banner wow animate__fadeInUp">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/banner.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/banner-3.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
     </div>
     <!-- plan样式 -->
     <div class="plan">
         <!-- 版心 -->
-        <div class="plan-c center">
-            <div class="top">
+        <div class="plan-c center ">
+            <div class="top wow animate__bounceInLeft">
                 <h3><span></span> 特别策划</h3>
                 <h4>ACTIVITY&nbsp;ROUTR</h4>
             </div>
-            <div class="content content-top">
+            <div class="content content-top wow animate__lightSpeedInLeft">
                 <div class="box-img">
                     <img src="img/plan-1.jpg" alt="">
                     <div class="mask"></div>
@@ -102,7 +102,7 @@
                     </p>
                 </div>
             </div>
-            <div class="content content-center">
+            <div class="content content-center wow animate__lightSpeedInRight">
                 <div class="c">
                     <h3>苍近距离看“滚滚”花式卖萌</h3>
                     <h4>成都City Walk之旅 （6days）</h4>
@@ -120,7 +120,7 @@
                     <div class="mask"></div>
                 </div>
             </div>
-            <div class="content content-bottom">
+            <div class="content content-bottom wow animate__lightSpeedInLeft">
                 <div class="box-img">
                     <img src="img/plan-3.jpg" alt="">
                     <div class="mask"></div>
@@ -149,12 +149,12 @@
         </div>
         <!-- 版心 -->
         <div class="about-c center">
-            <div class="top">
+            <div class="top wow animate__bounceInLeft">
                 <h3><span></span>关于我们</h3>
                 <h4>ABOUT&nbsp;US</h4>
             </div>
         </div>
-        <div class="right">
+        <div class="right wow animate__rotateInDownRight">
             <div class="first-dec">
                 <div class="left-dec">
                     <h3>介绍</h3>
@@ -179,12 +179,12 @@
     <div class="route">
         <!-- 版心 -->
         <div class="route-c center">
-            <div class="top">
+            <div class="top wow animate__bounceInLeft">
                 <h3><span></span>精品路线</h3>
                 <h4>CLASSICS&nbsp;ROUTR</h4>
             </div>
             <ul class="route-wrapper">
-                <li class="route-box">
+                <li class="route-box wow animate__fadeInTopLeft">
                     <h3>京都岚山深度一日游</h3>
                     <h4>寻找我们的风花雪月</h4>
                 </li>
@@ -192,7 +192,7 @@
                     <img src="img/route-1.jpg" alt="">
                     <div class="mask-border"></div>
                 </li>
-                <li class="route-box">
+                <li class="route-box wow animate__fadeInTopRight">
                     <h3>西北精环线自驾游</h3>
                     <h4>圆一场北方的梦</h4>
                 </li>
@@ -200,7 +200,7 @@
                     <img src="img/route-2.jpg" alt="">
                     <div class="mask-border"></div>
                 </li>
-                <li class="route-box">
+                <li class="route-box wow animate__bounceInDown">
                     <h3>东极岛三日游</h3>
                     <h4>后青春时代的海岛记忆</h4>
                 </li>
@@ -216,13 +216,13 @@
     <div class="make">
         <!-- <img src="img/make.jpg" alt=""> -->
         <div class="mask">
-            <div class="make-left">
+            <div class="make-left wow animate__fadeInLeft">
                 <h3>定制团体游</h3>
                 <h4>独立成团&nbsp;专属定制</h4>
                 <h5>简单几步，定制您的私人旅行</h5>
                 <hr>
             </div>
-            <div class="make-right">
+            <div class="make-right wow animate__fadeInRight">
                 <h3>领队自由行</h3>
                 <h4>金牌领队&nbsp;专业跟拍</h4>
                 <h5>解锁陌生，升级地道旅游体验</h5>
@@ -239,9 +239,9 @@
         <!-- 版心 -->
         <div class="footer-c center">
             <div class="left">
-                <h3><span></span> 联系我们</h3>
-                <h4>CONTACT</h4>
-                <dl>
+                <h3 class="wow wow animate__fadeInDown"><span></span> 联系我们</h3>
+                <h4 class="wow wow animate__fadeInDown">CONTACT</h4>
+                <dl class="wow wow animate__fadeInDown">
                     <dt>慢旅Slow Travle工作室</dt>
                     <dd>地点：中国河南省郑州市绿地新都汇</dd>
                     <dd>邮编：1000000 </dd>
@@ -255,7 +255,7 @@
                     <dd>COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</dd>
                 </dl>
             </div>
-            <div class="right">
+            <div class="right wow animate__flipInY">
                 <form action="#">
                     <div class="bigbox">
                         <div class="box">
@@ -277,137 +277,82 @@
             </div>
         </div>
     </div>
-    <script src="js/moveEase.js"></script>
+    <!-- 回到顶部 -->
+    <div class="return-top wow animate__backInUp">
+        <span class="fa fa-dove"></span>
+    </div>
+    <script src="./jquery/jquery.js"></script>
+    <script src="./swiper/swiper.min.js"></script>
+    <script src="./animate/wow.min.js"></script>
     <!-- 轮播 -->
     <script>
-        // 获取ul节点对象
-        var ulEl = document.querySelector(".banner ul");
-        //获取ul的所有子节点
-        var liEls = ulEl.children;
-        // console.log(liEls);
-        // 获取li盒子的宽度
-        var liWidth = liEls[0].offsetWidth;
-        // 定义一个计数器用于计算left的值
-        // 获取小圆点节点对象
-        var circleEls = document.querySelectorAll(".banner .dian-box button");
-        // 获取banner节点对象
-        var bannerEl = document.querySelector(".banner");
-        var count = 0;
-        /**
-         * 思路: 每点一个 都认为只走了一格
-         * 1. 点击触发的时候,先把目标元素图片替换当前的下一张(前/后)图片
-         * 2. 走一格
-         * 3. 走完后瞬间切换到目标位置
-         * 4. 还原之前的图片
-         * */
-        // 利用对象预存之前的图片
-        var preImg = {
-            index: 0,
-            img: ""
-        }
+        var swiper = new Swiper('.swiper-container', {
+            speed: 1000,
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
 
-        function goNext(isRight) {
-            if (isRight) {
-                count++;
-                if (count == liEls.length) {
-                    count = 1;
-                    ulEl.style.left = "0px";
-                }
-            } else {
-                count--;
-                if (count == -1) {
-                    count = liEls.length - 2;
-                    ulEl.style.left = -1 * (liEls.length - 1) * liWidth + "px";
-                }
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                bulletClass: 'swiper-pagination-bullet',
+                bulletActiveClass: 'swiper-pagination-bullet-active',
+                clickable: true,
+
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+            autoplay: {
+                delay: 3000,
+                pauseOnMouseEnter: true,
             }
-            // 移动的位置（点击的次数）
-            var targetLeft = -1 * liWidth * count;
-            moveEase(ulEl, targetLeft);
-            // 修改下标位置
-            // 获取激活的下标元素，然后把激活样式清除
-            // 获取激活样式的节点对象
-            var preCirActive = document.querySelector(".banner .dian-box button.active");
-            preCirActive.classList.remove("active");
-            // 给处于当前count的点添加激活样式
-            // circleEls[count].classList.add("active"); //点数小于图片的个数，导致最后一个circleEls[liEls.length]没有元素
-            // console.log(circleEls[liEls.length]);//undefined
-            // 所以需要提前判断一下
-            if (count == liEls.length - 1) {
-                circleEls[0].classList.add("active");
-            } else {
-                circleEls[count].classList.add("active");
-            }
-        }
-        // 遍历小圆点给他绑定点击事件
-        for (var i = 0; i < circleEls.length; i++) {
-            // 利用对象的特性给事件传递下标
-            circleEls[i].index = i;
-            circleEls[i].onclick = function() {
-                // 获取一个比较的定时器,然后判断具体的位置
-                var preCount = count;
-                // 把之前有的激活样式清除
-                // 或者排他思想
-                // 利用全局的计数器,把当前点击的index赋值给count当前的找到对应的left值
-                count = this.index;
-                for (var j = 0; j < circleEls.length; j++) {
-                    circleEls[j].classList.remove("active");
-                }
-                // 然后给自己添加
-                this.classList.add("active");
-                // 预存目标的图片路径和下标
-                // 预存对象的下标
-                var nextIndex = preCount + ((count >= preCount) ? 1 : -1);
-                // 预存对象的图片路径
-                // 预存对象赋值
-                preImg = {
-                    index: nextIndex,
-                    img: liEls[nextIndex].children[0].src
-                };
-                // 替换当前的图片路径到下一张(上一张)
-                liEls[nextIndex].children[0].src = liEls[count].children[0].src;
-                // 然后移动一格当前位置的left加一格
-                // var target = ulEl.offsetLeft + liWidth * (count >= preCount ? 1 : -1);
-                var target = ulEl.offsetLeft + liWidth * (count >= preCount ? -1 : 1);
-                var that = this; //避面this指向发生改变
-                // 然后利用封装好的匀速运动移动到目标位置
-                moveEase(ulEl, target, function() {
-                    // 走完之后再瞬间切换到目标位置
-                    // 当前所处的位置
-                    var nowTarget = -1 * liWidth * that.index;
-                    ulEl.style.left = nowTarget + "px";
-                    // 还原之前的图片,利用之前预存好的对象进行赋值
-                    liEls[preImg.index].children[0].src = preImg.img;
+        });
+    </script>
+    <!-- 回到顶部 -->
+    <script type="text/javascript">
+        // 页面顺滑滚动的方式:
+        //     1. html { scroll-behavior: smooth; }
+        //     2. window.scroll/By({ top: xx, left: xx, behavior: "smooth" })
+
+        console.log(window.pageYOffset);
+        // 监听滚动事件
+        $(function() {
+            window.onscroll = function() {
+                var sct = window.pageYOffset;
+                // console.log(sct);
+                $(".return-top").css({
+                    display: sct >= 800 ? "block" : "none"
                 });
-
             }
-        }
+        });
 
-        /**
-         * 利用定时器的循环执行方法实现自动的轮播
-         * setInterval
-         * */
-        // 声明一个全局的timer
-        var timer;
-
-        function cirDo() {
-            timer = setInterval(function() {
-                goNext(true);
-            }, 3000)
-        };
-        // 调用执行自动轮播
-        cirDo();
-
-        // 当鼠标进入banner的时候应该清除定时器
-        // 给banner绑定鼠标移入移出事件
-        bannerEl.onmouseenter = function() {
-            // 当鼠标进入的时候清除定时器
-            clearInterval(timer);
-        }
-        bannerEl.onmouseleave = function() {
-                // 当鼠标离开的时候加上定时器(调用封装好的方法)
-                cirDo();
-            }
-            // console.log(bannerEl);
+        $(".return-top").on("click", function() {
+            // window.scroll(0,0);
+            // window.scroll({ top: 0 });
+            window.scroll({
+                top: 0,
+                behavior: "smooth"
+            });
+        })
+    </script>
+    <!-- wow动画 -->
+    <script>
+        new WOW({
+            boxClass: 'wow',
+            animateClass: 'animate__animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        }).init();
     </script>
     <!-- 监听鼠标滚动事件 -->
     <script>
